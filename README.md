@@ -3,4 +3,4 @@
 
 ### Table of Content
 
-adding some critical scripts 
+adding some interview scripting questions
