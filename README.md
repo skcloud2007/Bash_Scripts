@@ -1,5 +1,6 @@
 # Bash_Scripts
+## This repo is my notebook which will help me in revision and troubleshooting
 
-Bourne Against shell /bin/bash
+### Table of Content
 
-./<file_name> argument1 argument2 
+adding some critical scripts 
