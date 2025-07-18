@@ -7,5 +7,7 @@
 
 `s/pattern/replacement/flags`
 s= substitue, find pattern, replace, optional flag to use like g(global), i(ignore case)
-`s/old/new/g`
+`s/old/new/g file.txt`
 Global substitution: Replaces all occurrences of "old" in a line.
+
+`s/old/new/Ig file.txt` Case insensitive substitution
