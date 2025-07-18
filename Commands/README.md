@@ -6,3 +6,4 @@
 `sed 's/old/new' file.txt`
 
 `s/pattern/replacement/flags`
+s= substitue, find pattern, replace, optional flag to use like g(global), i(ignore case)
