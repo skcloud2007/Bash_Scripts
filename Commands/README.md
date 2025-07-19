@@ -12,4 +12,6 @@ Global substitution: Replaces all occurrences of "old" in a line.
 
 `sed 's/old/new/Ig' file.txt` Case insensitive substitution where "I"
 
-`sed '/pattern/d' file.txt`   Delete line matching "pattern" from "file.txt" 
+`sed '/pattern/d' file.txt`   Delete line matching "pattern" from "file.txt"
+
+``sed -n '5p' file.txtx``  Print 5th line from file.txt
