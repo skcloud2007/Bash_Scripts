@@ -15,3 +15,5 @@ Global substitution: Replaces all occurrences of "old" in a line.
 `sed '/pattern/d' file.txt`   Delete line matching "pattern" from "file.txt"
 
 ``sed -n '5p' file.txtx``  Print 5th line from file.txt
+
+`sed '/pattern/i new_line' file.txt` Insert <new_line> before <pattern>
