@@ -1,15 +1,9 @@
 # Details of Project file 
 
-`Create files and directories\
-
-List files in directories\
-
-Search files by name and content\
-
-Backup files and directories\
-
-Show file details (size, permissions, etc.)\
-
-Delete files and directories\
-
-Handle errors, accept command-line parameters, and provide help.`
+1. Create files and directories
+2. List files in directories
+3. Search files by name and content
+4. Backup files and directories
+5. Show file details (size, permissions, etc.)
+6. Delete files and directories
+7. Handle errors, accept command-line parameters, and provide help.
