@@ -16,4 +16,14 @@ Global substitution: Replaces all occurrences of "old" in a line.
 
 ``sed -n '5p' file.txtx``  Print 5th line from file.txt
 
-`sed '/pattern/i new_line' file.txt` Insert <new_line> before <pattern>
+`sed '/pattern/i new_line' file.txt` Insert "new_line" before "pattern"
+
+`sed '/pattern/a new_line' file.txt` Insert "new_line" after "pattern"
+
+`sed '/^$/d' file.txt`  Delete empty line from "file.txt"
+
+`sed '10,20 s/old/new/g' file.txt` Replace "old" with "new" in line "10 and 20"
+
+`sed 's/[ \t]*$//' file.txt` Remove trailing whitespace from each line in file.txt
+
+`sed -i 's/old_text/new_text/g' file.txt` In-place sustitution of "old_text" with "new_text"
