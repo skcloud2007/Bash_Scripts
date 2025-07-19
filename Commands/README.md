@@ -10,4 +10,6 @@ s= substitue, find pattern, replace, optional flag to use like g(global), i(igno
 `s/old/new/g file.txt`
 Global substitution: Replaces all occurrences of "old" in a line.
 
-`s/old/new/Ig file.txt` Case insensitive substitution
+`sed 's/old/new/Ig' file.txt` Case insensitive substitution where "I"
+
+`sed '/pattern/d' file.txt`   Delete line matching "pattern" from "file.txt" 
