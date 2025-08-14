@@ -20,6 +20,8 @@ Linux provides operators to redirect these streams:
 | `2>&1`   | Redirect stderr to stdout             | `command > output.txt 2>&1`    |      |            |
 | \`       | \`                                    | Pipe stdout to another command | \`ls | grep txt\` |
 
+& → Used with redirection to signal that a file descriptor is being used 
+
 🔹 File Descriptors in Detail
 0 → stdin
 Reads input from user or file
@@ -31,4 +33,7 @@ Prints normal output
 Prints error messages
 # Redirect stdout to one file and stderr to another
 command > normal_output.txt 2> error_output.txt
+# Redirect output nowhere
+>/dev/null
+
 
