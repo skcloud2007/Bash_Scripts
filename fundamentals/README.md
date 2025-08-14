@@ -1,13 +1,15 @@
-# Wildcards
-### Wildcards can be used with most commands
- ls
- rm
- cp
+# 🐧 Linux Wildcards Cheat Sheet
 
-#### Match zero or more characters
-`*.txt`
-`a*`
-`a*.txt`
+Wildcards are special characters that allow you to match filenames and strings in commands. They can be used with most Linux commands such as:
+```bash
+ls
+rm
+cp
+
+*.txt      # Matches all files ending with .txt
+a*         # Matches all files starting with 'a'
+a*.txt     # Matches files starting with 'a' and ending with .txt
+
 #### Match exactly one charater
 `?.txt`
 `a?`
