@@ -32,6 +32,6 @@ ca[nt]*    # Matches files starting with 'ca' followed by 'n' or 't' and then an
 
 *\?        # Matches files that end with a question mark '?'
 
-`ls [[:upper:]]*.txt     # List all .txt files starting with an uppercase letter
+✨ Tip: Combine wildcards to create powerful filters. For example:
+ls [[:upper:]]*.txt     # List all .txt files starting with an uppercase letter
 rm [!aeiou]*.log        # Remove all .log files that do not start with a vowel
-`
