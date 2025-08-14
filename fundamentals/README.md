@@ -12,3 +12,5 @@
 `?.txt`
 `a?`
 `a?.txt`
+#### Matches any of the characters includinhg between the brackets. Match exactly one character
+Example `ca[nt]*` here any one character "n" or "t" will be filtered.
