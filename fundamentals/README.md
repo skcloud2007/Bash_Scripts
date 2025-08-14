@@ -10,33 +10,28 @@ cp
 a*         # Matches all files starting with 'a'
 a*.txt     # Matches files starting with 'a' and ending with .txt
 
-#### Match exactly one charater
-`?.txt`
-`a?`
-`a?.txt`
-#### Matches any of the characters includinhg between the brackets. Match exactly one character
-Example `ca[nt]*` here any one character "n" or "t" will be filtered.
+?.txt      # Matches any file with one-character name ending with .txt
+a?         # Matches files starting with 'a' followed by exactly one character
+a?.txt     # Matches files starting with 'a', followed by one character, ending with .txt
 
-#### Matches any one characters NOT included between brackets
-`[!]` for example `[!aeiou]*`
+ca[nt]*    # Matches files starting with 'ca' followed by 'n' or 't' and then anything else
 
-#### Use two characters separated by a hyphen to create a range in a characters class.
-`[a-g]*` Matches all the files that starts with a,b,c,d,e,f or g.
+[!aeiou]*  # Matches files that do not start with a vowel
 
-`[1-6]` Matches all the files that starts with 1,2,3,4,5 or 6
+[a-g]*     # Matches files starting with letters a through g
+[1-6]*     # Matches files starting with numbers 1 through 6
 
-#### Named Character Class
-`[[:alpha:]]` Matches alphabetic letters both upper & lower
+| Class       | Description                        | Example        |
+| ----------- | ---------------------------------- | -------------- |
+| `[:alpha:]` | Alphabetic letters (upper & lower) | `[[:alpha:]]*` |
+| `[:alnum:]` | Alphanumeric characters            | `[[:alnum:]]*` |
+| `[:digit:]` | Digits (0-9)                       | `[[:digit:]]*` |
+| `[:lower:]` | Lowercase letters                  | `[[:lower:]]*` |
+| `[:upper:]` | Uppercase letters                  | `[[:upper:]]*` |
+| `[:space:]` | Whitespace characters              | `[[:space:]]*` |
 
-`[[:alnum:]]` Alphanuemeric 
+*\?        # Matches files that end with a question mark '?'
 
-`[[:digit:]]` numbers and decimals
-
-`[[:lower:]]` Only lower
-
-`[[:space:]]` white spaces
-
-`[[:upper:]]` only upper cases
-
-#### \ - escape characters. Use if you want to match a wildcard charaters.
-`*\?` Match all the file that ends with a question mark
+`ls [[:upper:]]*.txt     # List all .txt files starting with an uppercase letter
+rm [!aeiou]*.log        # Remove all .log files that do not start with a vowel
+`
