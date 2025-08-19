@@ -26,3 +26,19 @@ htop              # "  "  "  "   "    "   "    "
 CTRL-c            # Kill the foreground process
 CTRL-z            # Suspend the foreground process
 ```
+
+```bash
+bg [%num]         # Background a suspended process
+fg [%num]         # foreground a background process
+kill              # Kill a process by Job PID or Number
+jobs [%num]       # List Jobs
+```
+
+```bash
+kill [-sig] pid   # Send a signal to the process
+kill -l           # Display a list of Signal
+
+# Example
+kill <PID>
+kill -15 <PID>   #  15 is type of kill
+kill -TERM <PID> # kill -9 <PID>
