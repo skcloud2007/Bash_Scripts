@@ -26,3 +26,10 @@ LVM introduces extra layers of abstraction between devices and filesystems place
 
 - Without LLVM, you would create a file system on a disk partition, but with LLVM you create a file system on a       logical volumes.
 - As long as there is free space in the volume group, logical volume can be extended.
+
+# 🐧 LVM Creation process
+```text
+- Create one or more PVs
+- Create VGs from those one or more PVs
+- Create one or more logical volumes (LVs) from VGs
+```
