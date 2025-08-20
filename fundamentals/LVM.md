@@ -33,3 +33,16 @@ LVM introduces extra layers of abstraction between devices and filesystems place
 - Create VGs from those one or more PVs
 - Create one or more logical volumes (LVs) from VGs
 ```
+
+#### steps involved
+```bash
+lsblk --->>>
+
+admin@LAPTOP-DC8DRH8K:~/Bash_Scripts/fundamentals$ lsblk
+NAME MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda    8:0    0 388.4M  1 disk
+sdb    8:16   0   186M  1 disk
+sdc    8:32   0     1G  0 disk [SWAP]
+sdd    8:48   0     1T  0 disk /mnt/wslg/distro
+                               /
+```
