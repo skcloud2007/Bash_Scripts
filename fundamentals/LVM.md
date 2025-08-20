@@ -19,7 +19,7 @@ Snapshot ===> Create point-in-time snapshots of your filesystems
 LVM introduces extra layers of abstraction between devices and filesystems placed on those storage devices
 ```
 
-> Logical Volumes (LV)
->> Volume Group (VG)
->>> Physical Volumes (PV)
->>>> Storage Devices
+- Logical Volumes (LV)
+-- Volume Group (VG)
+--- Physical Volumes (PV)
+---- Storage Devices
