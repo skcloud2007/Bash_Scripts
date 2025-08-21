@@ -28,3 +28,12 @@ $hostname     # webprod01
 uname -n      # webprod01
 $hostname -f  # webprod01.mycompany.com
 ```
+
+- Setting the hostname
+
+```bash
+hostname webprod01
+echo 'webprod01' > /etc/hostname
+vi /etc/sysconfig/network
+    HOSTNAME=webprod01
+```
