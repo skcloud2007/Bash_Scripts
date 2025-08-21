@@ -15,6 +15,7 @@ tracepath -n google.com   # it does not requires root privilege
 
 - The netstat command
 ```bash
+netstat
  -n   Display numerical addresses and ports
  -i   Display a list of network interfaces.
  -r   Display the route table (netstat -rn)
