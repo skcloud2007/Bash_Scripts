@@ -17,3 +17,6 @@ Ports 1-1023 are well known ports
   - netmask
   - gateway
   - DNS Servers
+- Each IP is leased from the pool of IP address the DHCP server manages.
+  - The lease expiration time is configurable on the DHCP server. (1 Hr, 1 Day, 1 week, etc)
+  - The client must renew the lease if it wants to keep using the IP address. If no renewal is recieved, the IP is available to other DHCP clients.
