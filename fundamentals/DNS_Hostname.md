@@ -10,4 +10,13 @@ ip a s
 ifconfig
 ```
 
-- 
+- Hostname (DNS Hostname)
+```bash
+FQDN = Fully qualified domain name
+    > webprod01.mycompany.com
+TLD
+    > .com, .net, .org
+Domains
+    >
+Sub-domain
+```
