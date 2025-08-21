@@ -23,3 +23,11 @@ tracepath -n google.com   # it does not requires root privilege
  -t   Limit the output to TCP (netstat -ntlp)
  -u   Limit the output to UDP (netstat -nulp)
 ```
+- Packet sniffing with tcpdump
+```bash
+tcpdump 
+  -n    Display numerical addresses and ports
+  -A    Display ASCII (text) output
+  -v    Verbose mode. produce more output
+  -vvv  Even more verbose output
+```
