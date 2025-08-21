@@ -49,3 +49,15 @@ BROADCAST=10.109.155.255
 GATEWAY=10.109.155.1
 ONBOOT=yes
 ```
+
+- Manually assigning a IP address
+  - Format
+```bash
+ip address add IP[/NETMASK] dev NETWORK_DEVICE
+
+ip address add 10.11.12.13 dev eth0
+
+ip address add 10.11.12.13/255.255.255.0 dev eth0
+
+ip link set eth0 up
+```
