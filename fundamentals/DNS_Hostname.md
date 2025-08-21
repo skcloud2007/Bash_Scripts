@@ -37,3 +37,16 @@ echo 'webprod01' > /etc/hostname
 vi /etc/sysconfig/network
     HOSTNAME=webprod01
 ```
+
+- Resolving DNS Name (host, dig)
+```bash
+host www.mycompany.com
+host 1.2.3.5
+```
+> The /etc/hosts file
+>> Format
+      IP FQDN alias(es)
+      10.11.0.1 webprod01.mycompany.com webprod01
+>> Now you can refer the host by name.
+      webprod01.mycompany.com OR webprod01
+>> /etc/hosts is local to your linux system. it does not propagate to rest of the network
