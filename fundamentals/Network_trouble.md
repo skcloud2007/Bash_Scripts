@@ -14,6 +14,7 @@ tracepath -n google.com   # it does not requires root privilege
 ```
 
 - The netstat command
+```bash
   - -n   Display numerical addresses and ports
   - -i   Display a list of network interfaces.
   - -r   Display the route table (netstat -rn)
@@ -21,3 +22,4 @@ tracepath -n google.com   # it does not requires root privilege
   - -l   Display listening socket (netstat -nlp)
   - -t   Limit the output to TCP (netstat -ntlp)
   - -u   Limit the output to UDP (netstat -nulp)
+```
