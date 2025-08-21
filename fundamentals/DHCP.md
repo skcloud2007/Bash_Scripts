@@ -61,3 +61,12 @@ ip address add 10.11.12.13/255.255.255.0 dev eth0
 
 ip link set eth0 up
 ```
+OR
+```bash
+ifconfig NETWORK_DEVICE addr netmask SUBNET_MASK
+
+ifconfig eth0 10.11.12.13
+ifconfig eth0 10.11.12.13 netmask 255.255.255.0
+
+ifconfig eth0 up
+```
