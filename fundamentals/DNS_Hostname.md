@@ -50,3 +50,12 @@ host 1.2.3.5
 >> Now you can refer the host by name.
 - webprod01.mycompany.com OR webprod01
 >> /etc/hosts is local to your linux system. it does not propagate to rest of the network
+
+- /etc/nsswitch.conf
+```bash
+NSS = Name Service Switch
+COntrols the search order for resolutions
+
+hosts:  files   dns
+hosts:  files   nis   dns
+```
