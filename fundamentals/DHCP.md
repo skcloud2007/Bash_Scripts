@@ -70,3 +70,11 @@ ifconfig eth0 10.11.12.13 netmask 255.255.255.0
 
 ifconfig eth0 up
 ```
+```bash
+# for UP and Down
+ifup <interface>
+ifup eth0
+
+ifdown <interface>
+ifdown eth0
+```
