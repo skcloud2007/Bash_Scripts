@@ -36,6 +36,9 @@ arg1 -le arg2       # True if arg1 is less than or equal to arg2
 arg1 -ge arg2       # True if arg1 is greater than or equal to arg2
 ```
 
+
+# 🐧 Script Samples when to use what
+
 - Making Decision - The if statement
 ```bash
 if [ condition ]
