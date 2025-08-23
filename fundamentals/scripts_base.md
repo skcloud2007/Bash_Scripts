@@ -132,4 +132,26 @@ echo "Archiving user: $1"
 passwd -l $1
 # create an archive of the home directory
 tar cf /archives/${1}.tar.gz /home/${1}
+
+## Example =====>>>>
+#!/bin/bash
+USER=$1  # first parameter is USER
+echo "Executing script: $0"
+echo "Archiving user: $USER"
+# Lock the account
+passwd -l $USER
+# Create an archive of the home directory
+tar cf /archives/${USER}.tar.gz /home/${USER}
+
+## Example =====>>>>>
+#!/bin/bash
+echo "Executing script: $0"
+for USER in $@
+do
+    echo "Archiving User: $USER"
+    # Lock the account
+    passwd -l $USER
+    # Create an archive of the home directory
+    tar cf /archives/${USER}.tar.gz /home/${USER}
+done
 ```
