@@ -35,3 +35,22 @@ arg1 -gt arg2       # True if arg1 is greater that arg2
 arg1 -le arg2       # True if arg1 is less than or equal to arg2
 arg1 -ge arg2       # True if arg1 is greater than or equal to arg2
 ```
+
+- Making Decision - The if statement
+```bash
+if [ condition ]
+then
+    command 1
+    command 2
+    command N
+fi
+
+# Example
+#!/bin/bash
+MY_SHELL="bash"
+if [ "$MY_SHELL" = "bash" ]
+then
+    echo "You seems to like the bash shell"
+fi
+
+```
