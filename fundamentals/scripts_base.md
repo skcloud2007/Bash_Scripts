@@ -62,4 +62,17 @@ then
 else
     echo "You don't seems to like the bash shell"
 fi
+
+## Example =====>>>>>>
+#!/bin/bash
+MY_SHELL="bash"
+if [ "$MY_SHELL" = "bash" ]
+then
+    echo "You seems to like the bash shell"
+elif [ "$MY_SHELL" = "csh" ]
+then
+    echo "You seems to like the csh shell"
+else
+    echo "You don't seems to like the bash shell"
+fi
 ```
