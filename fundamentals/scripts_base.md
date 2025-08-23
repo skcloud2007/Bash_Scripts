@@ -164,3 +164,6 @@ do
     tar cf /archives/${USER}.tar.gz /home/${USER}
 done
 ```
+# 🐧 Accepting User Input (STDIN)
+- The read command accepts STDIN
+    - Syntax -> read -p "PROMT" VARIABLE
