@@ -45,7 +45,7 @@ then
     command N
 fi
 
-# Example
+## Example =====>>>>>>>
 #!/bin/bash
 MY_SHELL="bash"
 if [ "$MY_SHELL" = "bash" ]
@@ -53,4 +53,13 @@ then
     echo "You seems to like the bash shell"
 fi
 
+## Example =====>>>>>>>
+#!/bin/bash
+MY_SHELL="bash"
+if [ "$MY_SHELL" = "bash" ]
+then
+    echo "You seems to like the bash shell"
+else
+    echo "You don't seems to like the bash shell"
+fi
 ```
