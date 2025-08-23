@@ -79,3 +79,39 @@ else
     echo "You don't seems to like the bash shell"
 fi
 ```
+
+- For loop
+```bash
+for VARIABLE_NAME in ITEM_1 ITEM_N
+do
+    COMMAND_1
+    COMMAND_2
+    COMMAND_3
+done
+
+## Example =====>>>>>
+#!/bin/bash
+for COLOR in red green blue
+do
+    echo "COLOR: $COLOR"
+done
+
+## Example =====>>>>>
+#!/bin/bash
+COLORS="red green blue"
+
+for COLOR in $COLOR
+do
+    echo "COLOR : $COLOR"
+done
+
+## Example =====>>>>> Remane the pictures
+#!/bin/bash
+PICTURES=$(ls *jpg)
+DATE=$(date +%F)
+for PICTURE in $PICTURES
+do
+    echo "Renaming ${PICTURE} to ${DATE}-${PICTURE}"
+    mv ${PICTURE} ${DATE}-${PICTURE}
+done
+```
