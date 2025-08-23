@@ -47,16 +47,18 @@ then
     command 2
     command N
 fi
-
+-----------------------------------------------------------
 ## Example =====>>>>>>>
+-----------------------------------------------------------
 #!/bin/bash
 MY_SHELL="bash"
 if [ "$MY_SHELL" = "bash" ]
 then
     echo "You seems to like the bash shell"
 fi
-
+-----------------------------------------------------------
 ## Example =====>>>>>>>
+-----------------------------------------------------------
 #!/bin/bash
 MY_SHELL="bash"
 if [ "$MY_SHELL" = "bash" ]
@@ -65,8 +67,9 @@ then
 else
     echo "You don't seems to like the bash shell"
 fi
-
+-----------------------------------------------------------
 ## Example =====>>>>>>
+-----------------------------------------------------------
 #!/bin/bash
 MY_SHELL="bash"
 if [ "$MY_SHELL" = "bash" ]
@@ -88,15 +91,17 @@ do
     COMMAND_2
     COMMAND_3
 done
-
+-------------------------------------------------------------
 ## Example =====>>>>>
+-------------------------------------------------------------
 #!/bin/bash
 for COLOR in red green blue
 do
     echo "COLOR: $COLOR"
 done
-
+-------------------------------------------------------------
 ## Example =====>>>>>
+-------------------------------------------------------------
 #!/bin/bash
 COLORS="red green blue"
 
@@ -104,8 +109,9 @@ for COLOR in $COLOR
 do
     echo "COLOR : $COLOR"
 done
-
+-------------------------------------------------------------
 ## Example =====>>>>> Remane the pictures
+-------------------------------------------------------------
 #!/bin/bash
 PICTURES=$(ls *jpg)
 DATE=$(date +%F)
@@ -133,7 +139,9 @@ passwd -l $1
 # create an archive of the home directory
 tar cf /archives/${1}.tar.gz /home/${1}
 
+--------------------------------------------------------------
 ## Example =====>>>>
+--------------------------------------------------------------
 #!/bin/bash
 USER=$1  # first parameter is USER
 echo "Executing script: $0"
@@ -142,8 +150,9 @@ echo "Archiving user: $USER"
 passwd -l $USER
 # Create an archive of the home directory
 tar cf /archives/${USER}.tar.gz /home/${USER}
-
+---------------------------------------------------------------
 ## Example =====>>>>>
+---------------------------------------------------------------
 #!/bin/bash
 echo "Executing script: $0"
 for USER in $@
