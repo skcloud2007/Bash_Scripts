@@ -167,3 +167,13 @@ done
 # 🐧 Accepting User Input (STDIN)
 - The read command accepts STDIN
     - Syntax -> read -p "PROMT" VARIABLE
+```bash
+## Example: =====>>>>>>
+#!/bin/bash
+read -p "Enter a user name: " USER
+echo "Archiving user: $USER"
+# lock the account
+passwd -l $USER
+# create an archive of the home directory
+tar cf /archives/${USER} /home/${USER}
+```
