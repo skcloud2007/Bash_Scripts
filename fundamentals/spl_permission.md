@@ -57,3 +57,14 @@ chmod 0755/path/to/file
 - Use on a directory to only allow the owner of the file/directory to delete it.
 -  Used on /tmp
   - drwxrwxrwt  10  root  root  4096  Feb 1 09:47 /tmp
+
+- Adding the Sticky Bit
+```bash
+chmod o+t /path/to/directory
+chmod 1777 /path/to/directory
+```
+- Removing the Sticky Bit
+```bash
+chmod o-t /path/to/directory
+chmod 0777 /path/to/directory
+```
