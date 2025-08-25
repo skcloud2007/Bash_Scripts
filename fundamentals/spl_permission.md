@@ -9,8 +9,9 @@
   - Noy honored on shell scripts.
 
 # 🐧 Octal permissions
-
+```bash
 setuid      setgid      sticky
   0           0           0       value for off
   1           1           1       Binary value for ON
   4           2           1       Base 10 value for ON
+```
