@@ -39,3 +39,21 @@ Good        -rwsr-xr-x        4755
 Bad         -rwsrwxr-x        4775
 Really Bad  -rwsrwxrwx        4777
 ```
+- Adding the setuid and setgid attributes
+```bash
+chmod u+g /path/to/file
+chmod 6755 /path/to/file
+```
+- Removing the setgid attribute
+```bash
+chmod g-s /path/to/file
+chmod 0755/path/to/file
+```
+
+- setgid on directories
+  - using setgid on a directory causes new files and subdirectories created within it to inherit.
+
+# 🐧 The Sticky Bit
+- Use on a directory to only allow the owner of the file/directory to delete it.
+-  Used on /tmp
+  - drwxrwxrwt  10  root  root  4096  Feb 1 09:47 /tmp
